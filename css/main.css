@@ -8,3 +8,13 @@
 
     --ff-barlow-semi: "Barlow Semi Condensed", sans-serif;
 }
+
+body {
+    font-family: var(--ff-barlow-semi);
+}
+
+.daniel-clifford-card {
+    background-color: var(--moderate-violet);
+    color: var(--white);
+}
+

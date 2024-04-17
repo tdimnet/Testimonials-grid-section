@@ -31,3 +31,6 @@ body {
     background-color: var(--very-dark-blackish-blue);
 }
 
+.kira-whittle-card {
+    background-color: var(--white);
+}

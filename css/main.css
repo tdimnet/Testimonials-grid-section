@@ -11,10 +11,19 @@
 
 body {
     font-family: var(--ff-barlow-semi);
+    background-color: var(--light-grayish-blue);
 }
 
 .daniel-clifford-card {
     background-color: var(--moderate-violet);
     color: var(--white);
+}
+
+.jonathan-walters-card {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.jeanette-harmon-card {
+    background-color: var(--white);
 }
 

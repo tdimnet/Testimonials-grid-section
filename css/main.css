@@ -29,6 +29,13 @@ main {
         "patrick"
         "kira"
     ;
+
+    @media screen and (min-width: 1024px) {
+        grid-template-areas: 
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira"
+        ;
+    }
 }
 
 .card {

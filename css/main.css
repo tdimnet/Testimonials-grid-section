@@ -29,6 +29,18 @@ main {
 
     header {
         display: flex;
+        margin-bottom: 1.125rem;
+    }
+
+    .people-name {
+        font-weight: 400;
+        font-size: 0.8125rem;
+        display: block;
+    }
+
+    .people-graduation {
+        font-size: 0.6875rem;
+        opacity: .6;
     }
 
     .profile-img {
@@ -51,6 +63,10 @@ main {
 .daniel-clifford-card {
     background-color: var(--moderate-violet);
     color: var(--white);
+
+    .full-testimonial {
+        color: var(--light-gray);
+    }
 }
 
 .jonathan-walters-card {
@@ -60,6 +76,7 @@ main {
 
 .jeanette-harmon-card {
     background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
 }
 
 .patrick-abrams-card {
@@ -69,4 +86,5 @@ main {
 
 .kira-whittle-card {
     background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
 }

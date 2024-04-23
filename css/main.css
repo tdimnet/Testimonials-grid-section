@@ -21,6 +21,14 @@ main {
     padding-right: 1.5rem;
     display: grid;
     gap: 1.5rem;
+
+    grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira"
+    ;
 }
 
 .card {
@@ -63,6 +71,7 @@ main {
 .daniel-clifford-card {
     background-color: var(--moderate-violet);
     color: var(--white);
+    grid-area: daniel;
 
     .full-testimonial {
         color: var(--light-gray);
@@ -72,19 +81,23 @@ main {
 .jonathan-walters-card {
     background-color: var(--very-dark-grayish-blue);
     color: var(--white);
+    grid-area: jonathan;
 }
 
 .jeanette-harmon-card {
     background-color: var(--white);
     color: var(--very-dark-grayish-blue);
+    grid-area: jeanette;
 }
 
 .patrick-abrams-card {
     background-color: var(--very-dark-blackish-blue);
     color: var(--white);
+    grid-area: patrick;
 }
 
 .kira-whittle-card {
     background-color: var(--white);
     color: var(--very-dark-grayish-blue);
+    grid-area: kira;
 }

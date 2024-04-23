@@ -39,6 +39,12 @@ main {
     .quote {
         font-size: 1.25rem;
         margin-bottom: 2.5rem;
+        font-weight: 600;
+    }
+
+    .full-testimonial {
+        font-weight: 400;
+        font-size: .8125rem;
     }
 }
 

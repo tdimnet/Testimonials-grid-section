@@ -1,119 +1,116 @@
 :root {
-    --moderate-violet: hsl(263, 55%, 52%);
-    --very-dark-grayish-blue: hsl(217, 19%, 35%);
-    --very-dark-blackish-blue: hsl(219, 29%, 14%);
-    --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(0, 0%, 81%);
-    --light-grayish-blue: hsl(210, 46%, 95%);
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
 
-    --ff-barlow-semi: "Barlow Semi Condensed", sans-serif;
+  --ff-barlow-semi: "Barlow Semi Condensed", sans-serif;
 }
 
 body {
-    font-family: var(--ff-barlow-semi);
-    background-color: var(--light-grayish-blue);
+  background-color: var(--light-grayish-blue);
+  font-family: var(--ff-barlow-semi);
 }
 
 main {
-    padding-top: 4.4375rem;
-    padding-bottom: 4.4375rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    display: grid;
-    gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira";
+  padding-bottom: 4.4375rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 4.4375rem;
 
-    grid-template-areas: 
-        "daniel"
-        "jonathan"
-        "jeanette"
-        "patrick"
-        "kira"
-    ;
-
-    @media screen and (min-width: 1024px) {
-        max-width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-areas: 
-            "daniel daniel jonathan kira"
-            "jeanette patrick patrick kira"
-        ;
-    }
+  @media screen and (min-width: 1024px) {
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+  }
 }
 
 .card {
-    padding: 1.5rem 2rem 2rem;
-    border-radius: .5rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem 2rem;
 
-    header {
-        display: flex;
-    }
+  header {
+    display: flex;
+  }
 
-    .people-name {
-        font-weight: 400;
-        font-size: 0.8125rem;
-        display: block;
-    }
+  .people-name {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 400;
+  }
 
-    .people-graduation {
-        font-size: 0.6875rem;
-        opacity: .6;
-        position: relative;
-        top: -8px;
-    }
+  .people-graduation {
+    font-size: 0.6875rem;
+    opacity: 0.6;
+    position: relative;
+    top: -8px;
+  }
 
-    .profile-img {
-        border-radius: 50%;
-        margin-right: 1rem;
-        height: 1.75rem;
-        width: 1.75rem;
-    }
+  .profile-img {
+    border-radius: 50%;
+    height: 1.75rem;
+    margin-right: 1rem;
+    width: 1.75rem;
+  }
 
-    .quote {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        font-weight: 600;
-    }
+  .quote {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
 
-    .full-testimonial {
-        font-weight: 400;
-        font-size: .8125rem;
-    }
+  .full-testimonial {
+    font-size: 0.8125rem;
+    font-weight: 400;
+  }
 }
 
 .daniel-clifford-card {
-    background-color: var(--moderate-violet);
-    color: var(--white);
-    grid-area: daniel;
-    background-image: url("/images/bg-pattern-quotation.svg");
-    background-repeat: no-repeat;
-    background-position: 90% top;
+  background-color: var(--moderate-violet);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-position: 90% top;
+  background-repeat: no-repeat;
+  color: var(--white);
+  grid-area: daniel;
 
-    .full-testimonial {
-        color: var(--light-gray);
-    }
+  .full-testimonial {
+    color: var(--light-gray);
+  }
 }
 
 .jonathan-walters-card {
-    background-color: var(--very-dark-grayish-blue);
-    color: var(--white);
-    grid-area: jonathan;
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--white);
+  grid-area: jonathan;
 }
 
 .jeanette-harmon-card {
-    background-color: var(--white);
-    color: var(--very-dark-grayish-blue);
-    grid-area: jeanette;
+  background-color: var(--white);
+  color: var(--very-dark-grayish-blue);
+  grid-area: jeanette;
 }
 
 .patrick-abrams-card {
-    background-color: var(--very-dark-blackish-blue);
-    color: var(--white);
-    grid-area: patrick;
+  background-color: var(--very-dark-blackish-blue);
+  color: var(--white);
+  grid-area: patrick;
 }
 
 .kira-whittle-card {
-    background-color: var(--white);
-    color: var(--very-dark-grayish-blue);
-    grid-area: kira;
+  background-color: var(--white);
+  color: var(--very-dark-grayish-blue);
+  grid-area: kira;
 }
